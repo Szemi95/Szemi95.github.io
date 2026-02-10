@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    width: 100%;
+}
+body{
+    background-image: url(../images/gaming_bg.jpg);   
+}
+
+h1{
+    display:inline-block;
+    color: rgb(230, 199, 199);
+}
+/*Formatting of Menu Start */
+nav a {
+    text-decoration: none;
+    color: rgb(242, 252, 251);
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color:black;
+}
+
+.Menu {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: 1px solid gray;
+    background-color: rgba(99, 39, 96, 0.7);
+    padding: 20px;
+}
+
+nav li {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    font-size: larger;
+    border-right: 1px solid gold;
+}
+
+.li-h1-center {
+    margin: 0 auto;
+    font-size: larger;
+    border-right: none;
+}
+
+.float-right{
+    float: right;
+}
+/*Formatting of Menu End */
+
+.text-style{
+    text-align: center;
+    font-size: larger;
+    color: rgb(244, 245, 245);
+    background-color: rgba(142, 45, 172, 0.7) ;
+    margin: 0 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(121, 121, 112);
+    list-style-position: inside;
+}
+
+.col{
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+footer{
+    padding:10px;
+    clear:both;
+    text-align: center;
+    color: rgb(241, 235, 235);
+}
+
+
