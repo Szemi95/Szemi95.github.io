@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    border: 2px solid brown;
+    background-color: #ffffd4;
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background: url("../images/pilis_header.jpg");
+    background-size: cover;
+}
+
+/* Start NAV */
+nav {
+    background-color: #ff7f2a;
+    clear: both;
+    padding: 25px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #bf153f;
+}
+/* End NAV */
+
+
+main {
+    background-color: white;
+    color: #555;
+}
+
+
+
+h2 {
+    padding: 20px 0 40px 15px;
+}
+
+.img-align {
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+}
+
+.text-formatting {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+h4 {
+    padding: 20px 0 10px 15px;
+}
+
+
+footer {
+    clear: both;
+    width: auto;
+    height: 201px;
+}
+
+
+.iframe-align{
+    padding-left: 0;     /* Don't hang on the border */
+    padding-right: 1px;
+}

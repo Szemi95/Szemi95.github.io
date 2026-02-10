@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white; /*#59c1d3;*/
+}
+
+main{
+    margin: 20px 50px;
+    border: 3px solid white;
+    background-color:rgba(245, 222, 179, 0.616);
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+
+.content-style{
+    background-color: rgba(237, 139, 100, 0.7);
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid white;
+    color: brown;
+}
