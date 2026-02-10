@@ -16,14 +16,23 @@ main{
 
 h1{
     text-align: center;
-    color: brown;
+    color: rgb(235, 30, 30);
+    text-decoration-line: underline;
 }
 
 .content-style{
-    background-color: rgba(237, 139, 100, 0.7);
+    background-color: rgb(199, 141, 177, 0.7);
     text-align: center;
     width: 70%;
     margin: 20px auto;
     border: 2px solid white;
-    color: brown;
+    color: rgb(114, 19, 19);
+    padding-top: 20px;
+}
+
+.anchor-styles{
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+    color: aliceblue;
 }
