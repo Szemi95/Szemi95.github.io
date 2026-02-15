@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CEA07E;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #E2E8C0;
+}
+
+.header-footer-style{
+    background-color: #846C5B;
+    text-align: center;
+    color: #EDD9A3;
+    padding: 20px 0;
+}
+
+header h1 {
+    padding-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header p {
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.menu-style {
+    background-color: #EDD9A3;
+    text-align: center;
+    padding: 20px 0;
+    border: 5px solid #CEA07E;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #846C5B;
+    padding-left: 50px;
+}
+
+nav ul li a:hover{
+    background-color: #443742;
+    background-size:cover;
+}
+
+section{
+    background-color:#E2E8C0;
+    text-align: justify;
+    color: #443742;
+    padding: 15px;
+}
+.h2-style{
+    line-height: 3;
+    text-decoration:underline;
+}
+
+.motivation-li-style{
+    font-size: smaller;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.text-align{
+    text-align: center;
+    list-style: none;
+}
+
+.strategyofmotivation{
+    font-style: italic;
+    line-height: 1.3;
+    text-align: center;
+    list-style: none;
+}
+
+
+
+
