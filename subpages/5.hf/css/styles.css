@@ -31,11 +31,15 @@ header p {
 .menu-style {
     background-color: #EDD9A3;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
     border: 5px solid #CEA07E;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
     top: 0;
+}
+
+ul {
+    margin: 25px;
 }
 
 nav ul li{
@@ -46,12 +50,13 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #846C5B;
-    padding-left: 50px;
+    margin-left: 150px;
 }
 
 nav ul li a:hover{
     background-color: #443742;
-    background-size:cover;
+    border: 5px solid #CEA07E;
+    border-radius: 10px;
 }
 
 section{
@@ -85,6 +90,16 @@ section{
     list-style: none;
 }
 
+/*subpage style */
 
+.text-box{
+    border: 5px solid #CEA07E;
+    padding:5px;
+    margin: 15px; 
+}
 
+section img{
+    display: block;
+    margin: 0 auto;
+}
 
