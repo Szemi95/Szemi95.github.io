@@ -34,7 +34,7 @@ header p {
 /*Menu formatting Start Here*/
 .menu-style {
     background-color: #EDD9A3;
-    text-align: center;
+    margin: 0 auto; 
     padding: 10px;
     border: 5px solid #CEA07E;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
