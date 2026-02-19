@@ -1,3 +1,9 @@
+:root {
+    --primary: #5352ed;
+    --white: #ffffff;
+    --light: #d2dae2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,45 +11,162 @@
 }
 
 body{
-    background-color: white; /*#59c1d3;*/
+    font-size: 18px;
+    font-weight: 600 ;
+    color: var(--light);
+    background-color: rgb(0, 0, 0);
 }
 
-main{
-    margin: 20px 50px;
-    border: 3px solid white;
-    background-color:rgba(245, 222, 179, 0.616);
+ul{
+    list-style: none;
 }
 
-header h1{
-    text-align: center;
-    color: rgb(201, 51, 51);
-    text-decoration-line: underline;
+.site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.content-style{
-    background-color: rgb(199, 141, 177, 0.7);
-    text-align: center;
-    width: 70%;
-    margin: 20px auto;
-    border: 2px solid white;
-    color: rgb(114, 19, 19);
-    padding-top: 20px;
+.options ul li{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    margin-bottom: 15px;
 }
 
-.anchor-styles{
+.options ul li input{
+    display: none;
+}
+
+.options ul li label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer ;
+}
+
+.options ul li label::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent; /*var(--primary);*/
+    border-radius: 7px;
+    z-index: -1;
+    transform: scale(1) ;
+    transition: border .3s, transform .3s;
+}
+
+.options ul li input:checked + label::before{
+    background-color: #5352ed33;
+    border-color: var(--primary);
+    box-shadow: #5352ed33 0 5px 15px;
+    animation: scaleborder .3s forwards cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes scaleborder{
+    50%{
+        transform: scale(1.05);
+    }
+}
+
+.options ul li label .circle{
+    width: 22px;
+    height: 22px;
+    border: 2px solid #454861;
+    background: linear-gradient(145deg, #1c1e2d, #3b4059);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: background .5s, border .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.options ul li input:checked + label .circle{
+    border: 7px solid var(--primary);
+    background: var(--white);
+    animation: scaledot .5s forwards cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes scaledot{
+    50%{
+        transform: scale(1.25);
+    }
+}
+
+.options ul li input:checked + label .text{
+    color:var(--white)
+}
+
+.options ul li label .fireworks{
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.options ul li label .fireworks::before,
+.options ul li label .fireworks::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 -25px 0 0 #ff8080,
+                25px 0 0 0 #a4ff80,
+                0 25px 0 0 #ffed80,
+                -25px 0 0 0 #a480ff,
+                12px -13px 0 0 #80c8ff,
+                25px 25px 0 0 #ff80ed,
+                -13px 12px 0 0 #80ffc8,
+                -25px -25px 0 0 #ffed80;
+    border-radius: 50%;
+    z-index: 10;
+    }
+
+    .options ul li label .fireworks::after{
+        width: 2px;
+        height: 2px;
+        transform: rotate(112deg);
+    }
+
+    .options ul li input:checked + label .fireworks{
+        animation: spread 2s forwards ;
+        will-change: box-shadow;
+        opacity: 1;
+        animation: spread 0.6s ease forwards;
+    }
+
+    @keyframes spread{
+        0%, 10% {
+            transform: scale(0);
+        }
+        25%{
+            transform: scale(1.2) rotate(40deg);
+        }
+        50%{
+            transform: scale(1) rotate(40deg) skewX(-25deg);
+        }
+    }
+
+    .options ul li input:checked + label .fireworks::before,
+    .options ul li input:checked + label .fireworks::after{
+        width: 0;
+        height: 0;
+        transition: width .3s .4s, height .3s .4s ;
+    }
+
+    a {
     display: block;
-    text-decoration: none;
-    padding-top: 20px;
-    color: aliceblue;
-}
-
-a:hover{
-    background-color: black;
-    opacity: 70%;
-    display: inline-block;
-    padding: 10px;
-}
-
-footer {
-    text-align: center;
+    width: 100%;
+    height: 100%;
 }

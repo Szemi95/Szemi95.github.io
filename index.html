@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szitkó Emese Jusztina | Prooktatás</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <main>
         <header>
             <h1>Prooktatás | Frontend - Házifeladatok</h1>
         </header>
 
-        <section class="content-style">
-            <h2>3. Házifeladat | 2026.02.02. </h2>
-            <a href="subpages/3.hf/index.html" target="_blank" class="anchor-styles">Kattints ide a megtekintéshez</a>
-        </section>
+        <div id="page" class="site">
+            <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="option" id="third" data-href="subpages/3.hf/index.html">
+                        <label for="third">
+                            <span class="circle"> </span>
+                            <span class="fireworks"></span>
+                            <span class="text">3. Házifeladat | 2026.02.02.</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="option" id="fourth" data-href="subpages/4.hf/index.html">
+                        <label for="fourth">
+                            <span class="circle"> </span>
+                            <span class="fireworks"></span>
+                            <span class="text">4. Házifeladat | 2026.02.09.</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="option" id="fifth" data-href="subpages/5.hf/index.html">
+                        <label for="fifth">
+                            <span class="circle"> </span>
+                            <span class="fireworks"></span>
+                            <span class="text">5. Házifeladat | 2026.02.16.</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            &copy; 2026 Szitkó Emese Jusztina
+        </footer>
+        <script>
+            document.querySelectorAll('input[name="option"]').forEach(radio => {
+                radio.addEventListener('change', function () {
+                    const url = this.dataset.href;
 
-        <section class="content-style">
-            <h2>4. Házifeladat | 2026.02.09. </h2>
-            <a href="subpages/4.hf/index.html" target="_blank" class="anchor-styles">Kattints ide a megtekintéshez</a>
-        </section>
-        <section class="content-style">
-            <h2>5. Házifeladat | 2026.02.16. </h2>
-            <a href="subpages/5.hf/index.html" target="_blank" class="anchor-styles">Kattints ide a megtekintéshez</a>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2026 Szitkó Emese Jusztina
-    </footer>
+                    if (url) {
+                        setTimeout(() => {
+                            window.open(url, "_blank");
+                        }, 600); // animáció ideje
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>
-
