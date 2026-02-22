@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Házi feladat | Prooktatás Frontend 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main id="container">
+        <header id="opheader" class="hot-header">
+            <h1>Üdvözöljük oldalunkon!</h1>
+        </header>
+    
+        <!--aside Start here-->
+        <aside id="aside">
+            <ul>
+                <li><a href="#section1">Balaton</a></li>
+                <li><a href="#section2">Tisza-tó</a></li>
+                <li><a href="#section3">Szelidi-tó</a></li>
+            </ul>
+            <h4>Kérem töltse ki a jelentkezési űrlapot!</h4>
+            <form action="" method="get">
+                <div class="formatting-text">
+                    <label class="formatting-label" for="Name">Név:</label>
+                    <input type="text" id="Name" name="Name" maxlength="40" placeholder="Vezetéknév Keresztnév" required>
+                </div>
+                <div class="formatting-text">
+                    <label class="formatting-label" for="Email"> Email cím:</label>
+                    <input type="text" id="Email" name="Email address" maxlength="40" placeholder="valami@valami.com" required>
+                </div>
+                <div class="formatting-text">
+                    <label class="formatting-label" for="Telefon number"> Telefonszám:</label>
+                    <input type="text" id="Telefon number" name="Telefon number" maxlength="12" placeholder="+36123456789" required>
+                </div>
+                <div class="formatting-text">
+                    <span class="formatting-span" >Melyik tó érdekli?:</span>
+                    <input list="lakes" required>
+                    <datalist id="lakes">
+                        <option value="Balaton"></option>
+                        <option value="Tisza-tó"></option>
+                        <option value="Szelidi-tó"></option>
+                    </datalist>
+                </div>
+                <div class="formatting-text">
+                    <span class="formatting-span">Milyen szállást keres?</span>
+                    <input type="checkbox" id="hotel" name="hotel">
+                    <label for="hotel">szálloda</label>
+                    <input type="checkbox" id="apartman" name="apartman">
+                    <label for="apartman">apartmanház</label>
+                    <input type="checkbox" id="kemping" name="kemping">
+                    <label for="kemping">kemping</label>
+                </div>
+                <div class="formatting-text">
+                    <span class="formatting-span">Milyen ellátás legyen?</span>
+                    <input type="radio" id="full" name="service" value="teljes">
+                    <label for="full">teljes</label>
+                    <input type="radio" id="half pension" name="service" value="fél panzió">
+                    <label for="half pension">fél panzió</label>
+                    <input type="radio" id="only breakfast" name="service" value="csak reggeli">
+                    <label for="only breakfast">csak reggeli</label>
+                    <input type="radio" id="no service" name="service" value="nem kérek ellátást">
+                    <label for="no service">nem kérek ellátást</label>
+                </div>
+
+                <span>Egyéb üzenet:</span>
+                <textarea name="message" placeholder="Egyedi kéréseit kérjük itt adja meg"></textarea>
+                <button type="button" onclick="alert('Sikeresen beküldve')">Elküld!</button>
+            </form>
+        </aside>
+        <!--aside End here-->
+        <section id="section1" class="section123">
+            <h2>Balaton</h2>
+            <img src="image/balaton-lake1.png" alt="balaton-lake" class="img-mobile">
+            <p>A Balaton Magyarország legismertebb tava.
+                Kiválló program lehetőségeket biztosít az egész család részére. 
+                A Balaton lágyan simogató vize elég gyorsan felmelegszik.
+                Még a legnagyobb rekkenő hőségben is kellemes felüdülést kínál minden balatoni nyaralónak.
+                A 26-28 fokos vízhőmérséklet még a fázósaknak is kellemes.
+                Nem kell félni a veszélyes állatfajoktól annak aki a Balatont választja.
+                Nincsenek medúzák, skorpiók, mérgező állatok és növények sem.</p>
+                
+        </section>
+        <section id="section2" class="section123">
+            <h2>Tisza tó</h2>
+            <img src="image/tisza-lake.png" alt="tisza-lake" class="img-mobile">
+            <p>A Tisza-tó Magyarország második legnagyobb tava.
+                Ennek ellenére sok nyaraló fejében egyelőre messze elmarad a Balatontól.
+                Pedig a Tisza-tó csodaszép strandokkal, természetközeli látnivalókkal, kalandos vízitúrákkal tökéletes helyszín a nyaraláshoz.
+                A legtöbb helyen az árak is barátságosabbak, mint a magyar tengernél.
+                Ugyanakkor innen sem hiányoznak a változatos programok és a gasztronómiai élmények sem.
+                A Tisza-tó körül végig jó minőségű biciklis út lett kiépítve, mely javarészt a tó mellett halad végig.
+                A tó körül számos jól kiépített strand található, sok helyen kenut vagy SUP-ot is lehet bérelni.
+            </p>
+            
+        </section>
+        <section id="section3" class="section123">
+            <h2>Szelidi-tó</h2>
+            <img src="image/szelidi-lake.png" alt="szelidi-lake" class="img-mobile">
+            <p>A Kiskunság legkedveltebb kiránduló- és üdülõhelye.
+                Szelidi-tó 5 km hosszú, 150-200 m széles, 3-4 m mély.
+                 Ez az egyetlen mély vizű, szikes jellegű tó hazánkban. 
+                 Kellemes, lágy, gyorsan felmelegedő lúgos vize van.
+                 A strandolás és más vízi élmények mellé a Kékmoszat tanösvény meglátogatását javasoljuk. 
+                 A 12 állomást felfűző tanösvény bemutatja a tó keletkezését, a víz jellegzetességeit és a benne élő élőlényeket, valamint a környező területek élővilágát.
+            </p>
+            
+        </section>
+        <footer>&copy; Just in Art 2026</footer>
+    </main>
+
+</body>
+
+</html>
