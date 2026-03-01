@@ -29,8 +29,6 @@ main#container{
     background-color: #E7E6E6;
     border: 3px solid #6789A8;
     border-radius: 15px ;
-    margin: 15px;
-    padding: 15px;
     text-align: center;
     grid-column: 1 / 13; 
 }
