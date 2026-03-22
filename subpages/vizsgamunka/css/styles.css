@@ -7,6 +7,7 @@
 .side-styles{
     font-family: "Cormorant Garamond", serif;
     font-style: normal;
+    font-size: 20px; ;
 }
 
 #container{
@@ -36,9 +37,10 @@ header{
     grid-row: 2;
     background-color: #ffb7c563;
     color: white;
-    position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar ul li a{
@@ -66,12 +68,11 @@ header{
 .menu{
     list-style: none;
     display: flex;
-    align-items: center;
-    
+    justify-content: space-between;
 }
 
 .menu-center{
-    margin: 0 30px;
+    margin: 0 50px;
 }
 
 .menu-right{
@@ -82,34 +83,80 @@ header{
 .menu-right + .menu-right{
     margin-left: 10px;
 }
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: white;
+    padding: 10px 0;
+    min-width: 180px;
+    display: none;
+}
+
+.dropdown-menu li{
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a{
+    color: black;
+    font-size: large;
+}
+
+.dropdown-menu li:hover{
+    background-color: #ffd1dc;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
 /* NAV END HERE */
 .video-position{
-    position: relative;
-    grid-column: 1/13;
+    grid-column: 4/13;
     grid-row: 3;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .div-video1{
-    width: 80%;
+    width: 100%;
     display: block;
 }
 
 aside{
-    background-color: rgb(170, 170, 170);
+    background-color: #eed4db;;
     grid-column: 1/4;
     grid-row: 3;
+    
 }
 
-.section1{
+.topofaside{
+    width: 100%;
+    height: 150px;
+    border: 2px solid white;
+    background-color: #eed4db;
+}
+
+aside a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgb(245, 235, 235);
+    padding: 15px;
+}
+
+
+#index-section1{
     grid-column: 1/13;
     grid-row: 4;
     text-align: center;
     margin: 20px;
 }
 
-.section1 p{
+#index-section1 p{
     margin-bottom: 20px;
     font-size: larger;
 }
@@ -139,8 +186,37 @@ aside{
     height: auto;
 }
 
+#index-section3{
+    grid-column: 1/13;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+}
+
+#index-section3 div{
+    margin: 20px;
+}
+
+#index-section3 ul li{
+    list-style: none;
+    margin: 5px;
+}
+
+#index-section4{
+    grid-column: 1/13;
+    grid-row: 8;
+    text-align: center;
+}
+
+
+#index-section4 video{
+    width: 60%;
+    margin: 0 auto;
+}
+
 footer{
     grid-column: 1/13;
+    grid-row: 9;
     background-color: black;
     color: white;
     text-align: center;
@@ -200,7 +276,6 @@ label{
 
 table td{
     padding: 0 25px 0 15px;
-    /*border-left: 1px solid white;*/
 }
 
 .aboutus-section1{
@@ -217,6 +292,7 @@ table td{
 .image-aboutus{
     float: left;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 .image-aboutus::after{
@@ -228,4 +304,217 @@ table td{
 .aboutus-section2{
     grid-column: 2/12;
     grid-row: 4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.flip-card{
+    width:600px;
+    height:450px;
+    perspective:1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform 0.8s;
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+}
+
+.flip-card-front img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.flip-card-back{
+    transform:rotateY(180deg);
+}
+
+.flip-card-back iframe{
+    width:100%;
+    height:100%;
+    border-radius:15px;
+}
+
+figure{
+    margin:0;
+}
+
+section img{
+    border-radius: 10px;
+}
+
+.item{
+    position: relative;
+    width: 250px;
+}
+
+.item img{
+    width: 100%;
+    display: block;
+}
+
+.outofstock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.caption{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: rgb(214, 186, 186);
+    text-align: center;
+}
+
+.accessories-footwear-h2{
+    grid-column: 1/13;
+    text-align: center;
+    margin: 20px;
+}
+
+.acessoriesfootwear-section{
+   grid-column: 1/13;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+
+.acessoriesfootwear-section img{
+    width: 250px;
+    height: 375px;
+}
+
+@media(max-width:1550px){
+    #index-section1 img{
+        width: 70%;
+    }
+}
+
+@media(max-width:1015px){
+    #container{
+         grid-template-columns: 1fr;
+    }
+
+    header,
+    .navbar,
+    .video-position,
+    section,
+    footer{
+        grid-column: 1;
+    }
+    aside{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    video{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-center,
+    .menu-right{
+        margin: 0;
+    }
+
+    .section2{
+        grid-template-columns: 1fr;
+    }
+
+    .section2 p{
+        grid-column: 1;
+    }
+
+    .section2 img:nth-of-type(3){
+        grid-column: 1;
+    }
+
+    #index-section1 img,
+    .section2 img{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    }
+    #index-section3{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #index-section4{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #aboutus-section1{
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .image-aboutus{
+        float: none;
+        width: 80%;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+    #aboutus-section2{
+        grid-column: 1;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .flip-card{
+        width: 90%;
+        max-width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .contact-section1style{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }

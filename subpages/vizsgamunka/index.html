@@ -12,7 +12,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="side-styles">
     <main id="container" class="main-styles">
         <header>
@@ -20,39 +19,48 @@
                 25 000 Ft-os vásárlás felett ingyenes szállítás!
             </p>
         </header>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <div class="h1p-text">
                 <h1><a href="index.html">Élégance</a></h1>
                 <p>A 2026-os kollekció legszebb darabjai</p>
             </div>
             <ul class="menu">
-                <li class="menu-center"><a href="#">Aktuális kollekciónk</a></li>
-                <li class="menu-center"><a href="#">Ruházat</a></li> <!--ez dropdown lenne-->
-                <li class="menu-center"><a href="#">Lábbelik</a></li>
-                <li class="menu-center"><a href="#">Kiegészítők</a></li>
+                <li class="menu-center dropdown">
+                    <a href="#">Ruházat</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Férfi ruházat</a></li>
+                        <li><a href="#">Női ruházat</a></li>
+                    </ul>
+                </li>
+                <li class="menu-center"><a href="subpages/élégance-footwear.html">Lábbelik</a></li>
+                <li class="menu-center"><a href="subpages/élégance-accessories.html">Kiegészítők</a></li>
                 <li class="menu-right"><a href="subpages/élégance-about-us.html">Rólunk</a></li>
-                <li class="menu-right"><a href="subpages/élégance-contact.html">Kapcsolat</a></li> <!--Form-->
+                <li class="menu-right"><a href="subpages/élégance-contact.html">Kapcsolat</a></li>
             </ul>
         </nav>
         <aside>
-            <p>Aside lesz könyvjelzőkkel/ legyen inkább itt a kereső?</p>
-            <a href="#"></a>
+            <div class="topofaside"></div>
+            <a href="#index-section2">Hamarosan érkező termékek</a>
+            <a href="#index-section3">Impresszum</a>
+            <a href="#index-section4">Reklamáció</a>
         </aside>
         <div class="video-position">
             <video autoplay muted loop class="div-video1">
                 <source src="media/index-video1.mp4" type="video/mp4">
             </video>
         </div>
-        <section class="section1">
+        <section id="index-section1">
             <p>Minden nő megérdemli, hogy saját magából a legjobbat hozza ki. <br>
                 Célkitűzésünk tehát az, hogy olyan darabokat
                 biztosíthassunk, amelyekkel a hétköznapi elegancia új értelmet nyer.
                 Emellett megfizethető áron elérhető. <br>
                 Legyen idős, vagy fiatal, kollekcióinkban minden vásárló megtalálja a számára megfelelő öltözéket.
             </p>
-            <img src="images/index-section1.jpg" alt="oldwomen-youngwomen-ladys" height="800">
+            <a href="subpages/women-clothes.html">
+                <img src="images/index-section1.jpg" alt="oldwomen-youngwomen-ladys" height="800">
+            </a>
         </section>
-        <section class="section2">
+        <section id="index-section2"  class="section2">
             <p>Hamarosan! <br>
                 Hamarosan bővül kínálatunk gyermek ruházattal is.<br>
                 Hisszük, hogy az elegáns divathoz sose lehetsz elég fiatal!
@@ -60,10 +68,46 @@
             <img src="images/3.jpg" alt="kid-boy-elegance-blackclothes">
             <img src="images/2.jpg" alt="kid-girl-elegance">
             <img src="images/1.jpg" alt="kid-boy-elegance">
-
+        </section>
+        <section id="index-section3">
+            <div>
+                <h2>Impresszum</h2>
+                <p>Adatainkat, és műkődési engedélyünket itt találod.<br>
+                    Kérdés esetén telefonszámunk: +36 1 00 000
+                </p>
+            </div>
+            <div>
+                <h2>Cégadatok</h2>
+                <ul>
+                    <li><strong>Az üzemeltető cég elnevezése:</strong> Élégance</li>
+                    <li><strong>A cég rövidített elnevezése:</strong> Élégance</li>
+                    <li><strong>A cég magyarországi székhelye:</strong> 3525 Miskolc Görgey Artúr u. 8.</li>
+                    <li><strong>A cég magyarországi telephelye:</strong></li>
+                    <li><strong>A cég központi raktára:</strong> Franciaország, Párizs</li>
+                    <li><strong>A cég adószáma:</strong> 12121212-5-12</li>
+                    <li><strong>Közösségi adószám:</strong> FR121212</li>
+                    <li><strong>Cégjegyzékszám:</strong> 12-01-1212</li>
+                    <li><strong>A cég pénzforgalmi jelzőszáma (bankszámla szám):</strong> 11212121-12121212</li>
+                    <li><strong>IBAN:</strong> HU1212112121212121000000000</li>
+                    <li><strong>SWIFT:</strong> FIKTIV</li>
+                </ul>
+            </div>
+        </section>
+        <section id="index-section4">
+            <div>
+            <video autoplay muted loop class="div-video1">
+                <source src="media/damaged-package.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div>
+            <h2>Reklamáció</h2>
+            <p>Amennyiben nem jó méretű terméket választottál, úgy elállásodat az átvételtől számított 14 napon belül tudjuk fogadni.<br>
+                Ha a megrendelt termék sérülten érkezett meg hozzád, akkor a bejelentést követően rövid időn belül orvosoljuk a problémát. <br> 
+                Reklamáció bejelentéséhez/ érdeklődáshez a kapcsolatfelvételi lehetőségünket itt találod: <a href="subpages/élégance-contact.html">Kapcsolat</a>
+            </p>
+            </div>
         </section>
         <footer>&copy; 2026 Élégance | Just In Art </footer>
     </main>
 </body>
-
 </html>
