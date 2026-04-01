@@ -130,6 +130,7 @@ header{
 .div-video1{
     width: 100%;
     display: block;
+    height: auto;
 }
 
 aside{
@@ -153,6 +154,7 @@ aside a:hover{
 }
 
 .topofaside{
+    position: relative;
     width: 100%;
     height: 150px;
     border: 2px solid white;
@@ -161,6 +163,12 @@ aside a:hover{
 
 .topofaside input{
     margin: 50px auto;
+}
+
+.topofaside i{
+    position: absolute;
+    top: 40%;
+    left: 14%;
 }
 
 #index-section1{
@@ -437,6 +445,7 @@ section img{
 .item{
     position: relative;
     width: 250px;
+    margin-bottom: 30px;
 }
 
 .item img{
@@ -483,6 +492,50 @@ section img{
     width: 250px;
     height: 375px;
 }
+
+.men-clothes-div{
+    grid-column: 1/4;
+    grid-row: 3;
+    text-align: center;
+    font-size: larger;
+}
+
+.products{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.product-card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.image-container{
+    position:relative;
+}
+
+.image-container img{
+    width:100%;
+    height: 350px;
+    border-radius:10px;
+}
+
+.product-name{
+    margin:10px 0;
+}
+
+.price{
+    font-weight:bold;
+    margin-bottom:10px;
+    font-size: larger;
+}
+
 
 @media(max-width:1550px){
     #index-section1 img{
