@@ -698,9 +698,6 @@ footer{
     }
 }
 
-/* =========================
-   MOBIL (max 768px)
-========================= */
 @media (max-width: 1143px) {
 
     .main-styles {
@@ -791,7 +788,7 @@ footer{
     }
 
     .product-card:hover {
-        transform: none; /* mobilon ne legyen zoom bug */
+        transform: none; 
     }
 
     .image-container img {
